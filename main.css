@@ -1,0 +1,78 @@
+/* MAJOR VANILLA TAGS*/
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(44, 44, 44);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+
+    display: grid;
+    grid-template-rows: 2em 1fr 2em;
+    grid-template-columns: 1fr;
+}
+
+header {
+    height: 2em;
+    width: 100%;
+    background: rgb(71, 71, 71);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    height: 2em;
+    width: 100%;
+    background: rgb(71, 71, 71);
+    grid-column: 1/-1;
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* MAJOR VANILLA TAGS*/
+
+/* BOARD CSS */
+.game {
+    grid-column: 1/3;
+}
+
+.board{
+    display: grid;
+    margin: auto;
+    grid: repeat(3,1fr) / repeat(3,1fr);
+    height: 50vmin;
+    width: 50vmin;
+    grid-gap: 0.5em;
+    background: rgb(35, 177, 202);
+    border-radius: 30%;
+}
+
+.square{
+    background: white;
+    border-radius: 5px;
+}
+
+
+
+/* BOARD CSS */
+
+/* FOOTER CSS */
+.foot {
+    position: absolute;
+    right: 0px;
+}
+
+.foot__icons {
+    color: white;
+    padding: 0px 20px;
+}
+
+/* FOOTER CSS */
