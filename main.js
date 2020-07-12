@@ -18,10 +18,10 @@ let UIController = (function(){
             boxes.forEach(element =>{
                 let boardIdx = element.getAttribute(DOMStrings.boxAlt);
                 if(Board[boardIdx] === 'X'){
-                    element.innerHTML = "<p>X</p>";
+                    element.innerHTML = "<div class='x'></div>";
                 }
                 else if(Board[boardIdx] === 'O'){
-                    element.innerHTML = "<p>O</p>";
+                    element.innerHTML = "<div class='o'></div>";
                 }
                 else{
                     element.innerHTML = "";
